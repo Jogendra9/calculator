@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+       <div class="container">
+        <input type="text"  id="display" >
+        <div class="buttons">
+
+        <button type="button" class="oprater"   onclick="displayvalue = '';
+        document.querySelector('#display').value = displayvalue; ">AC</button>
+
+
+<button type="button" class="oprater" onclick="displayvalue = displayvalue.slice(0, -1); 
+document.querySelector('#display').value = displayvalue;">DEL</button>
+
+
+        <button type="button" class="oprater"  onclick="displayvalue = displayvalue + '%' 
+             document.querySelector('#display').value = displayvalue;">%</button>
+
+
+        <button type="button" class="oprater"  onclick="displayvalue = displayvalue + '/' 
+             document.querySelector('#display').value = displayvalue;">/</button>
+
+        <button value="7"   onclick="displayvalue = displayvalue + '7' ;
+             document.querySelector('#display').value = displayvalue;">7</button>
+
+        <button type="button"  onclick="displayvalue = displayvalue + '8' 
+             document.querySelector('#display').value = displayvalue;" > 8</button>
+
+        <button type="button"  onclick="displayvalue = displayvalue + '9' 
+             document.querySelector('#display').value = displayvalue;">9</button>
+
+        <button type="button" class="oprater" onclick="displayvalue = displayvalue + '*' 
+             document.querySelector('#display').value = displayvalue;">*</button>
+
+        <button  type="button"  onclick="displayvalue = displayvalue + '4' 
+             document.querySelector('#display').value = displayvalue;">4</button>
+
+        <button type="button"  onclick="displayvalue = displayvalue + '5' 
+             document.querySelector('#display').value = displayvalue;">5</button>
+
+        <button type="button" onclick="displayvalue = displayvalue + '6' 
+             document.querySelector('#display').value = displayvalue;">6</button>
+
+        <button type="button" class="oprater"  onclick="displayvalue = displayvalue + '-' 
+             document.querySelector('#display').value = displayvalue;">-</button>
+
+        <button type="button" onclick="displayvalue = displayvalue + '1' 
+             document.querySelector('#display').value = displayvalue;">1</button>
+
+        <button type="button" onclick="displayvalue = displayvalue + '2' 
+             document.querySelector('#display').value = displayvalue;">2</button>
+
+        <button type="" onclick="displayvalue = displayvalue + '3' 
+             document.querySelector('#display').value = displayvalue;">3</button>
+
+        <button type="button" class="oprater" onclick="displayvalue = displayvalue + '+' 
+             document.querySelector('#display').value = displayvalue;">+</button>
+
+        <button type="button" onclick="displayvalue = displayvalue + '0' 
+             document.querySelector('#display').value = displayvalue;">0</button>
+
+        <button type="button" onclick="displayvalue = displayvalue + '00' 
+             document.querySelector('#display').value = displayvalue;">00</button>
+
+        <button type="button"  onclick="displayvalue = displayvalue + '.' 
+             document.querySelector('#display').value = displayvalue;">.</button>
+
+        <button type="button" class="oprater"  onclick="displayvalue = eval(displayvalue);
+             document.querySelector('#display').value = displayvalue;">=</button>
+        </div>
+       </div>
+       
+        <script>
+          let displayvalue ='';
+          document.querySelector('#display').value = displayvalue;
+          
+           
+        </script>
+</body>
+</html>
